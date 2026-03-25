@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SuperNova Lab | Inicio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #061225, #0b1f3f 45%, #08101d);
+      color: #ffffff;
+      line-height: 1.5;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header {
+      padding: 28px 0 18px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(8px);
+      background: rgba(24, 58, 96, 0.75);
+      z-index: 10;
+    }
+    .brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-left img {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #8cd3ff;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffd84d;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.25s ease;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, #9be15d, #00c9ff);
+      color: #07111f;
+    }
+    .btn-primary:hover { transform: translateY(-2px); }
+    .hero {
+      padding: 70px 0 50px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
+      align-items: center;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(255, 220, 70, 0.16);
+      color: #ffd84d;
+      border: 1px solid rgba(255, 216, 77, 0.35);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      line-height: 1.1;
+      margin: 0 0 14px;
+    }
+    .hero h2 span { color: #ffd84d; }
+    .hero p {
+    color: #e8f1fb;
+    font-size: 1.12rem;
+    line-height: 1.7;
+    }
+    .card {
+    background: rgba(36, 58, 96, 0.78);
+    border: 1px solid rgba(140, 211, 255, 0.18);
+    border-radius: 22px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #8cd3ff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      padding: 12px 0 48px;
+    }
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 24px 0 36px;
+      color: #b8c7d8;
+      text-align: center;
+    }
+    @media (max-width: 900px) {
+      .hero, .grid { grid-template-columns: 1fr; }
+      .hero h2 { font-size: 2.2rem; }
+      .brand {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+    }
+   .video-section {
+   padding: 20px 0 60px;
+   }
+   .video-section h2 {
+   color: #7fc8ff;
+   font-size: 2rem;
+   margin-bottom: 10px;
+   }
+  .video-section p {
+  color: #e8f1fb;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  }
+  .video-section video {
+  border-radius: 20px;
+  border: 1px solid rgba(140, 211, 255, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  background: #000;
+  }	
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container brand">
+      <div class="brand-left">
+        <img src="imagenes/supernova.png" alt="Logo SuperNova Lab">
+        <h1>SUPERNOVA LAB</h1>
+      </div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="tag">Innovación, formación y tecnología</div>
+        <h2>Impulsamos la <span>IA</span> aplicada a la empresa</h2>
+        <p>
+          SuperNova Lab es una iniciativa orientada a la formación en inteligencia artificial,
+          automatización e innovación digital para empresas, profesionales y equipos que desean
+          comprender y aplicar la tecnología de forma práctica.
+        </p>
+        <a class="btn btn-primary" href="cursos.html">Ver cursos</a>
+      </div>
+
+      <div class="card">
+        <h3>Quiénes somos</h3>
+        <p>
+          En SuperNova Lab acercamos la inteligencia artificial a personas y organizaciones
+          que desean comenzar desde una base clara, útil y aplicada al entorno real de trabajo.
+        </p>
+        <p>
+          Nuestro enfoque combina conceptos, herramientas y casos prácticos para que la IA no
+          se vea como algo lejano, sino como una oportunidad real de mejora e innovación.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Misión</h3>
+        <p>Brindar formación práctica en IA, automatización e innovación digital con un enfoque accesible, útil y orientado a resultados.</p>
+      </div>
+
+      <div class="card">
+        <h3>Visión</h3>
+        <p>Ser una referencia en formación tecnológica aplicada, ayudando a empresas y profesionales a adoptar la IA con claridad y propósito.</p>
+      </div>
+
+      <div class="card">
+        <h3>Enfoque</h3>
+        <p>Concepto antes que herramienta, aprendizaje práctico, aplicabilidad empresarial y formación para principiantes y equipos de trabajo.</p>
+      </div>
+    </section>
+  </main>
+    <section class="video-section">
+    <div class="container">
+    <h2>Conoce nuestro método de enseñanza</h2>
+    <p>Descubre cómo en SuperNova Lab enseñamos IA aplicada a la empresa de forma clara, práctica y accesible.</p>
+    <video controls width="100%">
+      <source src="videos/supernova.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+</section>
+  <footer>
+    <div class="container">© 2026 SuperNova Lab. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>
