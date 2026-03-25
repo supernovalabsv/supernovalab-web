@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SuperNova Lab | IA Aplicada a la Empresa</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #03101f, #07214a 45%, #050d18);
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 28px 0 18px;
+      border-bottom: 1px solid rgba(140, 211, 255, 0.18);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(8px);
+      background: rgba(24, 58, 96, 0.75);
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-left img {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #9ad7ff;
+      letter-spacing: 1px;
+      font-weight: 800;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #9be15d, #00c9ff);
+      color: #07111f;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      padding: 72px 0 48px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(255, 220, 70, 0.16);
+      color: #ffd84d;
+      border: 1px solid rgba(255, 216, 77, 0.35);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      line-height: 1.1;
+      margin: 0 0 14px;
+    }
+
+    .hero h2 span {
+      color: #ffd84d;
+    }
+
+    .hero p {
+      color: #e8f1fb;
+      font-size: 1.12rem;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .hero-card,
+    .card {
+      background: rgba(36, 58, 96, 0.78);
+      border: 1px solid rgba(140, 211, 255, 0.18);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-card h3,
+    .card h3 {
+      margin-top: 0;
+      color: #7fc8ff;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+
+    .price {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ffd84d;
+      margin: 10px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      padding: 12px 0 48px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 24px 0 36px;
+      color: #b8c7d8;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+
+      .brand {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .brand-left img {
+        width: 64px;
+        height: 64px;
+      }
+
+      .brand h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container brand">
+      <div class="brand-left">
+        <img src="imagenes/supernova.png" alt="Logo SuperNova Lab">
+        <h1>SUPERNOVA LAB</h1>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a class="btn" href="index.html" style="background: rgba(255,255,255,0.12); color:#ffffff; border:1px solid rgba(255,255,255,0.15);">Inicio</a>
+      <a class="btn btn-primary" href="https://wa.me/50377430848" target="_blank">Inscribirme por WhatsApp</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="tag">Curso virtual para principiantes</div>
+        <h2>IA Aplicada a la <span>Empresa</span></h2>
+        <p>
+          Aprende el concepto antes que la herramienta. Comprende cómo se aplica la
+          inteligencia artificial en procesos empresariales, incluso cuando no se cuenta con
+          todas las herramientas o licencias premium.
+        </p>
+        <a class="btn btn-primary" href="https://wa.me/50377430848" target="_blank">Reservar cupo</a>
+      </div>
+
+      <div class="hero-card">
+        <h3>Información del curso</h3>
+        <p><strong>Inicio:</strong> Domingo 12 de abril</p>
+        <p><strong>Duración:</strong> 4 sesiones virtuales vía Teams</p>
+        <p><strong>Horario 1:</strong> 8:00 a.m. a 10:00 a.m.</p>
+        <p><strong>Horario 2:</strong> 10:30 a.m. a 12:30 p.m.</p>
+        <div class="price">$25</div>
+        <p>Incluye diploma de participación</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Dirigido a</h3>
+        <ul>
+          <li>Administrativos</li>
+          <li>Emprendedores y equipos</li>
+          <li>Principiantes sin experiencia en IA</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Qué aprenderás</h3>
+        <ul>
+          <li>Conceptos básicos de IA</li>
+          <li>Automatización y mejora de procesos</li>
+          <li>Aplicación práctica en entornos empresariales</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Contacto</h3>
+        <p><strong>WhatsApp:</strong> 77430848</p>
+        <p><strong>Correo:</strong> supernovalabsv@gmail.com</p>
+        <p><strong>Modalidad:</strong> Microsoft Teams</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 SuperNova Lab. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>
